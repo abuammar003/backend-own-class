@@ -1,0 +1,17 @@
+{
+  "name": "myproject",
+  "version": "1.0.0",
+  "description": "project for practice",
+  "main": "main.js",
+  "scripts": {
+    "server": "nodemon ./otp_generator/otpgen.js",
+    "test": "testing the code"
+  },
+  "author": "abu",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}

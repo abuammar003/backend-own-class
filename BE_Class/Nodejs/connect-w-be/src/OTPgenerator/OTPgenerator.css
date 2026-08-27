@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.884);
+}
+
+.main {
+    width: 320px;
+    height: 330px;
+    margin: 0 auto;
+    margin-top: 8rem;
+    padding: 2rem 1.5rem 3rem 1.5rem;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: rgb(0, 0, 0);
+}
+.main h1 {
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color: rgb(226, 4, 4);
+    text-shadow: 4px 4px 8px red;
+}
+
+.main p {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.phone-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    margin: 0 auto;
+}
+
+input {
+    padding: 8px 15px;
+    font-size: 18px;
+    /* margin-top: 1rem; */
+    width: 90%;
+    border-radius: 10px;
+    /* box-shadow: 0px 1px 3px 1px white; */
+    color: gray;
+
+}
+.phone-form h2 {
+    margin: 0rem 0rem;
+    color: white;
+}
+ button {
+    padding: 8px 15px;
+    font-size: 15px;
+    font-weight: 600;
+    width: 90%;
+    cursor: pointer;
+    margin: 0 auto;
+    border-radius: 15px;
+    /* margin-top: 0.8rem; */
+    color: white;
+    background-color: rgb(170, 6, 6);
+}
+h3{
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+}
+h2{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.otp-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    margin: 0 auto;
+}
+.otp-form .otpInputs {
+    padding: 0;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+#otp {
+   width: 35px;
+   padding: 5px;
+   text-align: center;
+   align-items: center;
+}
+
+.otp_Btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.otp_Submit {
+    width: 70%;
+}
+.back_toPhone {
+    width: 30%;
+    background-color: transparent;
+    color: violet;
+    border: none;
+    transition: 0.3s;   
+}
+.back_toPhone:hover {
+    color: red;
+}   
+
+
