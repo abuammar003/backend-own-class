@@ -4,34 +4,14 @@
 
 const Express = require("express");
 const app = Express();
+let users = require("../BE/data");
 
-
-// MiddleWare => Middleware aisa Function hota hai jo har Route se Pahele Chalta hai.
-// eg: express.json() => for using JSON type Data, CORS() => .  
-        //(req, res, next => Ye (min)teen cheezen dena Zaroori hai.)
-        // req => it contains Users Data.  res => Servers Data, next=> Pass/Push to Next Route.
 
 app.use(function(req, res, next) {
     console.log("Middleware Working")    
     next();
 });
 
-
-const users = [
-{
-    "id": 1,
-    "name": "Abu Ammar",
-    "age": 21    
-},{
-    "id": 2,
-    "name": "Elon Musk",
-    "age": 56
-}, {
-    "id": 3,
-    "name": "Jeff Bezzos",
-    "age": 62
-}
-];
 
 
 app.get("/", (req, res) => {
