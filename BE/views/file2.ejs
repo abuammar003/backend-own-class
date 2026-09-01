@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Contact Form - No Backend - HTML & CSS Only</title>
+
+    <link rel="stylesheet" href="/stylesheets/file2.css" >
+
+  </head>
+
+<body>
+    <div class="contact-page">
+      <form
+      class="contact-card"
+      action="https://html.contact/f/<form-id>"
+      method="POST"
+      >
+
+        <div class="form-header">
+          <p class="eyebrow">Contact form</p>
+          <h1>Send us a message</h1>
+          <p>Fill out the form below and we’ll get back to you shortly.</p>
+        </div>
+
+        <div class="field-grid">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Jane Smith" required />
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" placeholder="(555) 123-4567" />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="jane@example.com" required />
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="How can we help?" required ></textarea>
+        </div>
+
+        <button type="submit">Submit message</button>
+
+       
+            <!-- Delete to here, keep everything beneath this comment. -->
+      </form>
+    </div>
+  </body>
+</html>

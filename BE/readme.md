@@ -20,3 +20,17 @@
     -the params value is accessed by 'req'.
     e.g:"/profile/:username" 
         let {username} = req.params;
+
+
+
+5- Template Engines.  (ejs => Embedded JavaScript Temptlate)
+    - ejs is also a html but it has power to to Calculations.
+---------- ejs Setup ---------
+    i-    ejs install => npm i ejs
+    ii-   configure ejs => app.set("view engine", "ejs").
+    iii-  views => ek views name ka folder banana hai jisme saari ejs files hogi. 
+                    (ejs me send ki jaga render karna hai).
+            e.g: app.get("/ejs", (req, res) => {
+                res.render("index");     OR    res.render("index.ejs");
+            });
+    

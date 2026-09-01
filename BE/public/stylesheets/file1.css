@@ -1,0 +1,73 @@
+ body {
+          margin: 0;
+          font-family: "Avenir", "Helvetica Neue", Arial, sans-serif;
+          color: var(--impact-text);
+          background: #f8fafc;
+          padding: 1rem;
+        }
+
+        .impact {
+          padding: var(--impact-padding-y) var(--impact-padding-x);
+          background: var(--impact-bg);
+        }
+
+        .impact__inner {
+          max-width: var(--impact-max-width);
+          margin: 0 auto;
+        }
+
+        .impact__title {
+          margin: 0 0 48px;
+          font-size: clamp(2.25rem, 4.3vw, 2.75rem);
+          font-weight: 700;
+          text-align: center;
+          letter-spacing: -0.015em;
+        }
+
+        .impact__grid {
+          display: grid;
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+
+        .impact-card {
+          position: relative;
+          padding: 48px 36px;
+          border: 1px solid transparent;
+          border-top-color: var(--border-top-default, var(--impact-border));
+          border-right-color: var(--border-right-default, var(--impact-border));
+          border-bottom-color: var(--border-bottom-default, var(--impact-border));
+          border-left-color: var(--border-left-default, var(--impact-border));
+          background: var(--impact-bg);
+          transition: border-color 200ms ease, box-shadow 200ms ease;
+          --border-top-hover: var(--border-top-default, var(--impact-border));
+          --border-right-hover: var(--border-right-default, var(--impact-border));
+          --border-bottom-hover: var(--border-bottom-default, var(--impact-border));
+          --border-left-hover: var(--border-left-default, var(--impact-border));
+        }
+
+        .impact-card:nth-child(4n + 1) {
+          --border-left-default: transparent;
+        }
+        .impact-card:nth-child(4n) {
+          --border-right-default: transparent;
+        }
+        .impact-card:nth-child(-n + 4) {
+          --border-top-default: transparent;
+        }
+        .impact-card:nth-child(n + 5) {
+          --border-bottom-default: transparent;
+        }
+
+        .impact-card h3 {
+          margin: 0 0 16px;
+          font-size: 1.25rem;
+          font-weight: 600;
+          line-height: 1.35;
+        }
+
+        .impact-card p {
+          margin: 0;
+          color: var(--impact-muted);
+          font-size: 1rem;
+          line-height: 1.6;
+        }
