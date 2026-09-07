@@ -8,7 +8,7 @@
 
         .impact {
           padding: var(--impact-padding-y) var(--impact-padding-x);
-          background: var(--impact-bg);
+          background: var(--impact-bg); 
         }
 
         .impact__inner {

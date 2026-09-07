@@ -139,7 +139,7 @@
           font: inherit;
           font-size: 17px;
           font-weight: 600;
-          cursor: pointer;
+          cursor: pointer; 
           transition:
             transform 160ms ease,
             opacity 160ms ease,

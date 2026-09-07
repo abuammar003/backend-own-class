@@ -8,7 +8,7 @@ app.set("view engine", "ejs");    //To configure ejs in the File.
 
 app.use(express.static('./public'));
 
-
+ 
 app.get("/", function(req, res) {
     res.send("<h1> Template Engines (ejs) Server...  <p> /about: for file1.ejs <br /> /contact: for file2.ejs  </p> </h1>");
 });
